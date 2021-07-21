@@ -8,12 +8,17 @@
 
     h1
         font-size: 50px
-    
+        @include mobile
+            font-size: 20px
     ul
         margin: 10px
         padding: 0
         list-style: none
         display: flex
+        @include Laptop
+            flex-wrap: wrap
+            justify-content: center
+
     
     .container
         width: 70%
@@ -21,6 +26,9 @@
         align-items: center
         justify-content: center
         flex-wrap: wrap
+
+        @include mobile
+            width: 100%
 
         .item
             width: 400px
@@ -35,7 +43,24 @@
             position: relative
             transition: all .5s ease
             cursor: pointer
+            
+            @include Laptop
+                width: 300px
+                height: 200px
 
+            @include Lg
+                width: 220px
+                height: 150px
+
+            @include Md
+                width: 160px
+                height: 120px
+
+
+            @include mobile
+                margin: 10px
+                width: 130px
+                height: 100px
 
             h3
                 position: absolute

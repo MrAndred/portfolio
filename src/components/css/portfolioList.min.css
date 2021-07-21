@@ -6,6 +6,12 @@
   cursor: pointer;
 }
 
+@media (max-width: 575px) {
+  .portfolioList {
+    margin-right: 10px;
+  }
+}
+
 .portfolioList.active {
   background-color: #150231;
   color: #fff;

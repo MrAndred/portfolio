@@ -1,11 +1,18 @@
+@import "../../global.sass"
+
 .contact
     background-color: #fff
     display: flex
+
+    @include Md
+        flex-direction: column
+
     .left
         flex: 1
         img
             margin: 0 20px
-            height: 97%
+            height: 90%
+            width: 90%
             overflow: hidden
     
     .right
@@ -27,14 +34,35 @@
             justify-content: space-around
 
             input
+                border-width: 2px
                 width: 300px
                 height: 30px
                 font-size: 14px
 
+                @include Lg
+                    width: 250px
+
+                @include Md
+                    height: 30px
+
+                @include mobile
+                    width: 200px
+                    height: 20px
+
             textarea
+                border-width: 2px
                 width: 300px
                 height: 200px
                 font-size: 14px
+                @include Lg
+                    width: 250px
+
+                @include Md
+                    height: 150px
+
+                @include mobile
+                    width: 200px
+                    height: 100px
 
             button
                 width: 150px

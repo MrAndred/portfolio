@@ -24,16 +24,30 @@
                 text-decoration: none
                 color: inherit
                 margin-right: 40px
+
+                @include Md
+                    font-size: 30px
             .itemContainer
                 display: flex
                 align-items: center
                 margin-right: 30px
+
+                @include Md
+                    font-size: 20px
+
+                @include mobile
+                    display: none
+
                 .icon
                     font-size: 18px
                     margin-right: 5px
-                .span
+                    
+                span
                     font-size: 15px
                     font-weight: 500
+                    
+                    @include Md
+                        font-size: 10px
         
         .right
             .hamburger

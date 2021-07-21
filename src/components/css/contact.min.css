@@ -5,6 +5,15 @@
   display: flex;
 }
 
+@media (max-width: 767px) {
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .contact .left {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -13,7 +22,8 @@
 
 .contact .left img {
   margin: 0 20px;
-  height: 97%;
+  height: 90%;
+  width: 90%;
   overflow: hidden;
 }
 
@@ -58,15 +68,55 @@
 }
 
 .contact .right form input {
+  border-width: 2px;
   width: 300px;
   height: 30px;
   font-size: 14px;
 }
 
+@media (max-width: 991px) {
+  .contact .right form input {
+    width: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact .right form input {
+    height: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact .right form input {
+    width: 200px;
+    height: 20px;
+  }
+}
+
 .contact .right form textarea {
+  border-width: 2px;
   width: 300px;
   height: 200px;
   font-size: 14px;
+}
+
+@media (max-width: 991px) {
+  .contact .right form textarea {
+    width: 250px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contact .right form textarea {
+    height: 150px;
+  }
+}
+
+@media (max-width: 575px) {
+  .contact .right form textarea {
+    width: 200px;
+    height: 100px;
+  }
 }
 
 .contact .right form button {

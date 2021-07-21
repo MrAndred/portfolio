@@ -25,7 +25,7 @@ export default function Intro() {
                     <h2>Hi There, I'm</h2>
                     <h1>Andrew Areshko</h1>
                     <h3><span ref = {textRef}></span> Developer</h3>
-                    <p>I'm studying in MRK in Belarus on 3 course and   do my best by completing <br /> different IT projects and read documentation</p>
+                    <p>I'm studying in MRC in Belarus on 3 course and do my best <br /> by completing different IT projects and read documentation</p>
                 </div>
                 <a href = "#portfolio">
                     <img src = "assets/arrowDown.png" alt = "" />

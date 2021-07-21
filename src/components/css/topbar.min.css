@@ -40,6 +40,12 @@
   margin-right: 40px;
 }
 
+@media (max-width: 767px) {
+  .topbar .wrapper .left .logo {
+    font-size: 30px;
+  }
+}
+
 .topbar .wrapper .left .itemContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,14 +56,32 @@
   margin-right: 30px;
 }
 
+@media (max-width: 767px) {
+  .topbar .wrapper .left .itemContainer {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .topbar .wrapper .left .itemContainer {
+    display: none;
+  }
+}
+
 .topbar .wrapper .left .itemContainer .icon {
   font-size: 18px;
   margin-right: 5px;
 }
 
-.topbar .wrapper .left .itemContainer .span {
+.topbar .wrapper .left .itemContainer span {
   font-size: 15px;
   font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .topbar .wrapper .left .itemContainer span {
+    font-size: 10px;
+  }
 }
 
 .topbar .wrapper .right .hamburger {

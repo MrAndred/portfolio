@@ -1,6 +1,14 @@
+@import "../../global.sass"
+
+
 .intro
     background-color: #fff
     display: flex
+
+    @include Laptop
+        flex-direction: column
+        align-items: center
+
     .left
         flex: 0.5
         .imageContainer
@@ -13,8 +21,18 @@
             align-items: center
             justify-content: center
             float: right
+
+            @include Laptop
+                width: 480px
+                height: 480px
+                align-items: self-start
+            @include mobile
+                width: 250px
+                height: 250px
+
             img
                 height: 100%
+
 
     .right
         flex: 0.5
@@ -27,17 +45,25 @@
             display: flex
             flex-direction: column
             justify-content: center
+
+        @include Laptop
+            padding-left: 0
+            align-items: center
         
         h1
             font-size: 60px
             margin: 10px 0
+            @include mobile
+                font-size: 30px
         
         h2
             font-size: 35px
-        
+            @include mobile
+               font-size: 17px      
         h3
             font-size: 30px
-
+            @include mobile
+                font-size: 15px
             span
                 font-size: inherite
                 color: #dc143c
@@ -53,13 +79,18 @@
         
         p
             font-size: 24px
-            margin: 10px 0
+            margin-right: 100px
+            @include mobile
+                font-size: 12px
                 
                     
     a
         position: absolute
         bottom: 10px
         left: 40%
+
+        @include Laptop
+            left: 50%
 
         img
            width: 30px
