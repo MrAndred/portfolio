@@ -1,0 +1,13 @@
+.portfolioList {
+  font-size: 14px;
+  margin-right: 50px;
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.portfolioList.active {
+  background-color: #150231;
+  color: #fff;
+}
+/*# sourceMappingURL=portfolioList.min.css.map */
