@@ -7,9 +7,9 @@ export const featuredPortfolio = [
     },
     {
         id:2,
-        title:"3D Container Ship",
-        img: "../../assets/ContainerShip.png",
-        a: "https://github.com/MrAndred/container_ship"
+        title:"Grocery Bud",
+        img: "../../assets/GroceryBud.png",
+        a: "https://github.com/MrAndred/grocerybud/tree/master"
     },
     {
         id: 3,
@@ -30,6 +30,12 @@ export const webPortfolio = [
         title:"PoshukAi",
         img: "../../assets/PoshukAi.png",
         a: "https://github.com/MrAndred/Article-For-Layout-master"
+    },
+    {
+        id:3,
+        title:"Grocery Bud",
+        img: "../../assets/GroceryBud.png",
+        a: "https://github.com/MrAndred/grocerybud/tree/master"
     }
 ]
 
